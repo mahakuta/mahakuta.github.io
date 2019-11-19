@@ -1,0 +1,39 @@
+# Site settings
+title: Mahakuta
+email: contact@mahakuta.com
+# baseurl: "mahakuta.com"
+url: "https://mahakuta.com" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: mahakuta
+github_username: mahakuta
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+include: ["_pages"]
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+sass:
+  sass_dir: _scss
+# Exclude from processing.
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

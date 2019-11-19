@@ -1,0 +1,155 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  padding-top: 8rem;
+  margin-bottom: 248px;
+  &.condensed-nav {
+    .navbar {
+      .logo {
+        width: 60px;
+        transition: width 1s ease 0s;
+      }
+    }
+  }
+}
+
+h1,
+h2 {
+  display: none;
+  visibility: hidden;
+}
+
+.btn-primary {
+  text-transform: uppercase;
+}
+
+.dark {
+  background-color: #161616;
+  color: #f7f7f7;
+}
+
+.navbar {
+  background-color: #111111;
+  transition: background-color 1s ease 0s;
+  .navbar-toggler {
+    border: none 0;
+  }
+  .logo {
+    width: 100px;
+    transition: width 1s ease 0s;
+  }
+  .navbar-nav {
+    .nav-link {
+      text-align: right;
+      padding-right: 0.75rem;
+    }
+  }
+}
+
+.jumbotron {
+  color: #f7f7f7;
+  border-radius: 0;
+  background-image: linear-gradient(
+      rgba(00, 00, 00, 0.5) 20%,
+      rgba(00, 00, 00, 0.5) 100%
+    ),
+    url("/assets/images/mahakuta-bg-1.jpg");
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10vw;
+  padding-bottom: 12vw;
+  // height: 80vh;
+  -webkit-transform-origin: 50% 85%;
+  transform-origin: 50% 85%;
+  margin: 0;
+  .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+section {
+  padding: 3rem 0 6rem;
+  min-height: 24em;
+  .display-4 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em 0 0.5em;
+  }
+  img {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+}
+
+.card-deck {
+  .card {
+    box-shadow: 0 10px 30px 0 rgba(67, 80, 98, 0.24),
+      0 2px 4px 0 rgba(67, 80, 98, 0.1);
+    margin: 1em;
+    .card-title {
+      text-transform: uppercase;
+    }
+    .card-img-top {
+      height: 3em;
+    }
+  }
+}
+
+.media {
+  img {
+    width: 50%;
+  }
+  .media-body {
+    p {
+      font-size: calc(60% + 1vw + 1vh);
+    }
+  }
+}
+
+.page-footer {
+  @extend .text-center, .dark;
+  position: absolute;
+  bottom: 0;
+  border-top: solid 1px #222222;
+  height: 248px;
+  padding-top: 1rem;
+  // padding-bottom: 1rem;
+  .copyright {
+    font-size: 70%;
+    color: #999999;
+    padding: 1rem 0 0;
+    border-top: solid 1px #222222;
+  }
+  .social-links {
+    margin: 1rem 0;
+    a {
+      color: #aaaaaa;
+    }
+    img {
+      width: 26px;
+      margin-right: 7px;
+    }
+  }
+  .tech {
+    color: #555555;
+    padding: 1rem 1rem 0.5rem;
+    text-align: center;
+    border-top: solid 1px #222222;
+    // background-color: #f7f7f7;
+    img {
+      height: 14px;
+      margin: 0 0.25rem;
+    }
+    &:first-child {
+      img {
+        height: 30px;
+      }
+    }
+  }
+}
